@@ -1,14 +1,14 @@
 ---
 title: Sample Payments Doc
-tags: ['testing-tag']
+tags: ['testing-tag', 'another-tag']
 author: vishwa
 ticket: TCK-1234
 ---
 
 # Sample Payments Doc
 
-This is my own test
+This is my own test, version 2 – definitely different content.
 
 - Component: testing
-- Tags: testing-tag
-- Timestamp: 1762185275
+- Tags: testing-tag, another-tag
+- Timestamp: 1762192431
