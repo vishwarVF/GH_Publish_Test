@@ -1,14 +1,5 @@
----
-title: Sample Payments Doc v3
-tags: ['payments', 'howto', 'test']
-author: vishwa
-ticket: TCK-999
----
+# Sample Payments Doc v3 (UPDATED)
 
-# Sample Payments Doc v3
+This content was updated via update-md.
 
-Initial content for v3 from the API.
-
-- Component: payments
-- Tags: payments, howto, test
-- Timestamp: 1762360810
+- Updated via CLI test.
