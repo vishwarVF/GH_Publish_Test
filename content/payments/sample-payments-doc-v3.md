@@ -7,8 +7,8 @@ ticket: TCK-999
 
 # Sample Payments Doc v3
 
-Initial content from API for v3.
+Update test 11/10/2025
 
 - Component: payments
 - Tags: payments, test
-- Timestamp: 1762378435
+- Timestamp: 1762800910
