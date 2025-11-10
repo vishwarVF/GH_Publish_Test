@@ -1,14 +1,14 @@
 ---
 title: Sample Payments Doc v3
-tags: ['payments', 'test']
+tags: ['payments']
 author: vishwa
 ticket: TCK-999
 ---
 
 # Sample Payments Doc v3
 
-Test
+Updated 2:01
 
 - Component: payments
-- Tags: payments, test
-- Timestamp: 1762801287
+- Tags: payments
+- Timestamp: 1762801318
