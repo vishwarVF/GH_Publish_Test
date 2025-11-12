@@ -7,16 +7,16 @@
   **A:** Enabling automatic selection of US Common Debit AIDs on EMV cards with multiple AIDs.
 
 - **Q:** Where does it surface (signals)?  
-  **A:** Application selection phase during chip (contact/contactless) transactions; candidate list includes multiple AIDs.
+  **A:** Cardholder is prompted for application selection when US Common Debit AIDs are present.
 
 - **Q:** Which interfaces/config are relevant?  
-  **A:** EMV_CT_GetCandidateData (39-16); config key: Merchant->UsCommonDebitPreferredAids; DF36 transaction options.
+  **A:** EMV_CT_GetCandidateData (39-16), candidate list callback, config key: Merchant->UsCommonDebitPreferredAids.
 
 - **Q:** What is the safe fix pattern?  
-  **A:** Detect US region, auto-select US Common Debit AID if present, bypass cardholder prompt.
+  **A:** Detect US Common Debit AIDs and auto-select them; bypass cardholder prompt if present.
 
 - **Q:** What should devs do/avoid?  
-  **A:** Do: Apply regional rules to candidate list. Don’t: Rely on default prompt for US debit selection.
+  **A:** Do: Apply regional rules to candidate list. Don’t: Rely on default prompt for US debit.
 
 - **Q:** Any gotchas or edge cases?  
   **A:** Ensure country code and IIN confirm US debit; handle both contact and contactless flows.
@@ -25,7 +25,7 @@
   **A:**  
   ```text
   if (countryCode == "US" && !iin.isNullOrEmpty()) {
-    // Apply US Common Debit rules
+    // Apply US Common Debit selection logic
   }
   ```
 
