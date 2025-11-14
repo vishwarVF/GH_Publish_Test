@@ -1,14 +1,15 @@
 ---
-title: Sample Payments Doc v3
-tags: ['payments', 'howto', 'test']
+title: Sample Payments Doc V3
+components: ["payments", "api", "testing"]
+primary_component: payments
 author: vishwa
 ticket: TCK-999
 ---
 
-# Sample Payments Doc v3
+# Sample Payments Doc V3
 
-Initial content for v3 from the API.
+This is a test commit for Payments Doc V3 — validating the new components/primary_component change.
 
-- Component: payments
-- Tags: payments, howto, test
-- Timestamp: 1762360810
+- Primary Component: payments
+- Components: payments, api, testing
+- Timestamp: 1762893800
